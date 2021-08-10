@@ -1,0 +1,54 @@
+#count {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-size: 100px;
+    color: #616fee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: -5px 2px 8px #c9267a;
+}
+
+* {
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    height: 60px;
+    width: 200px;
+    color: #f04646;
+    font-size: large;
+    font-family: cursive;
+    margin: 1em;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f8bae3, #deb6cb);
+    box-shadow: 2px 2px 5px #e3bad0, -2px -2px 5px #ffdaf4
+}
+
+body {
+    background-color: #deb6cb;
+    background-image: url('milkshake.png');
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+}
+
+#dec {
+    background-color: red;
+}
+
+#inc {
+    background-color: aqua;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
