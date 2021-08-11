@@ -10,7 +10,7 @@ document.querySelectorAll('.btn').forEach(element => {
             if (e.target.id == "inc") ++count
             else if (e.target.id == "dec") count = --count < 0 ? 0 : count;
             else count = 0;
-            counter.innerHTML = count + " cups";
+            counter.innerHTML = count + " cup" + (count === 1 ? "" : "s");
         } else {
             clearInterval(updateInterval);
             updateInterval = undefined;
@@ -22,7 +22,7 @@ document.querySelectorAll('.btn').forEach(element => {
         if (e.target.id == "inc") count++;
         else if (e.target.id == "dec") count = --count < 0 ? 0 : count;
         else count = 0;
-        counter.innerHTML = count + " cups";
+        counter.innerHTML = count + " cup" + (count === 1 ? "" : "s")
 
     });
 
@@ -30,13 +30,13 @@ document.querySelectorAll('.btn').forEach(element => {
         if (e.target.id == "inc") {
             updateInterval = setInterval(() => {
                 count++;
-                counter.innerHTML = count + " cups";
+                counter.innerHTML = count + " cup" + (count === 1 ? "" : "s");
             }, 500);
 
         } else if (e.target.id == "dec") {
             updateInterval = setInterval(() => {
                 count = --count < 0 ? 0 : count;
-                counter.innerHTML = count + " cups";
+                counter.innerHTML = count + " cup" + (count === 1 ? "" : "s");
             }, 500);
         }
 
