@@ -7,6 +7,7 @@
     color: #616fee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: -5px 2px 8px #c9267a;
+    text-align: center;
 }
 
 * {
@@ -50,5 +51,11 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width:578px) {
+    #count {
+        font-size: 60px;
     }
 }
