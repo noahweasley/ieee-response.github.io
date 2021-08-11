@@ -12,6 +12,7 @@
 
 * {
     user-select: none;
+    outline: none;
 }
 
 .container {
