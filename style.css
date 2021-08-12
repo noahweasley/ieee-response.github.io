@@ -19,6 +19,7 @@
     margin: 16px;
     color: #616fee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1rem;
     text-shadow: -5px 2px 8px #c9267a;
 }
 
@@ -63,9 +64,7 @@ body {
     #count {
         font-size: 60px;
     }
-    
     #head {
         font-size: 40px;
     }
-
 }
